@@ -1,5 +1,11 @@
 import { useEffect, useState } from "react";
 import Friend from "./components/Friend/Friend";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 
 function App() {
