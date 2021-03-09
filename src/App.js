@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import Friend from "./components/Friend/Friend";
 
 
 function App() {
@@ -12,6 +13,9 @@ function App() {
   return (
     <div>
         <h2>All Friends number is : {friends.length}</h2>
+        {
+          friends.map(friend => <Friend friend={friend}></Friend>)
+        }
     </div>
   );
 }
